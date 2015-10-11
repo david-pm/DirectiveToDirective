@@ -1,17 +1,17 @@
 (function() {
 	'use strict';
-	
+
 	angular.module('greetings')
-	
+
 	.directive('misfits', [misfits]);
 
 	function misfits() {
 		return {
-		    restrict: 'E',
-		    scope: {
-		        'btnText': '@'
-		    },
-		    templateUrl: 'app/misfits/misfitsTemplate.html',
+	    restrict: 'E',
+	    scope: {
+	        'btnText': '@'
+	    },
+	    templateUrl: 'app/misfits/misfitsTemplate.html',
 			controller: function($scope) {
 				$scope.songs = [];
 				$scope.set = false;
